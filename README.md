@@ -1,0 +1,5 @@
+The 021 Trade project is a feature-first Flutter implementation of a stock watchlist, built with the BLoC pattern to support live-ticking price updates, index tracking.
+
+To ensure a clean user experience, I implemented a draft-based state management flow where edits occur on a clone of the data, allowing for easy cancellation and preventing live price ticks from interfering with user modifications. The architecture uses sealed event hierarchy for type safety and an abstract repository layer to ensure the codebase remains decoupled, testable, and ready for future production scaling, such as swapping the mock data sources for real-time WebSockets or persistent storage.
+ 
+With a responsive layout that adapts to various screen sizes and a focus on modular components , the solution balances maintainable code structure with the interactive requirements specified in the assignment.
